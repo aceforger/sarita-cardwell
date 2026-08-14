@@ -5,26 +5,26 @@ import { FaArrowLeft, FaBookOpen, FaQuoteLeft } from 'react-icons/fa';
 const mockBooks = [
   { 
     id: '1', 
-    title: 'KAKAKI, THE MEDICINE WOMAN', 
-    author: 'DICKSON LANE', 
+    title: 'LILLY OF THE GHETTO', 
+    author: 'SARITA GAYE CARDSWELL', 
     image: '/images/image1.png', 
-    description: 'Kakaki, the medicine woman is a haunting exploration of gender empowerment across native cultures and archetypes in 19th century Canada. The novel follows protagonist Eliza Blackwood as she navigates the spiritual and physical landscapes of indigenous communities. Through vivid prose and meticulous research, Lane brings to life forgotten histories and traditions.', 
-    postDate: 'May 21, 2025',
-    quote: '"A mesmerizing journey through forgotten histories. Lane masterfully blends the supernatural with profound cultural insights." - Cultural Reviews',
+    description: '“Lilly of the Ghetto” expresses admiration for a woman who brings wonder, excitement, and a sense of magic wherever she goes. She is portrayed as someone extraordinary, capable of creating memorable and rewarding experiences for others. The poem reflects a desire for her presence to continue, emphasizing that life feels more vibrant and meaningful when she is around. Overall, it celebrates belief, hope, and the joy of witnessing something special that feels almost too good to be true.', 
+    postDate: 'July 4, 2025',
+    quote: '“Where Lilly walks, the ordinary fades — and in her presence, even the impossible dares to feel real.”',
     relatedTopics: [
-      { title: 'DICKSON LANE', link: 'More Information >' },
+      { title: 'SARITA GAYE CARDWELL', link: 'More Information >' },
     ]
   },
   { 
     id: '2', 
-    title: 'THE 10 LITTLE INDIANS (OF SUCCESSFUL SCREENPLAYS)', 
-    author: 'DICKSON LANE', 
+    title: 'THE LEGEND OF ANNE AND THE NUBIAN', 
+    author: 'SARITA GAYE CARDWELL', 
     image: '/images/image4.png', 
-    description: 'Learn from the Masters of Moviemaking about writing screenplays. This comprehensive guide breaks down complex storytelling techniques into ten essential principles that will transform your writing. Each chapter analyzes a classic film structure, from Hitchcockian suspense to contemporary nonlinear narratives.', 
-    postDate: 'August 18, 2021',
-    quote: '"I couldn\'t put it down! The most practical screenwriting guide I\'ve encountered in years." - Film Monthly',
+    description: '“Anne the Nubian” celebrates a powerful African queen and warrior who conquers evil and brings hope, freedom, and justice to her people. She is portrayed as strong, noble, and devoted to truth, leading the oppressed out of suffering and into liberation. The poem highlights her courage, beauty, and spiritual strength, presenting her as a legendary figure whose leadership inspires joy, faith, and triumph over darkness.', 
+    postDate: 'July 4, 2025',
+    quote: '“She rose not only as a queen of her land, but as a warrior of truth—turning chains into freedom and darkness into light.”',
     relatedTopics: [
-      { title: 'DICKSON LANE', link: 'More Information >' },
+      { title: 'SARITA GAYE CARDWELL', link: 'More Information >' },
     ]
   }
 ];
@@ -87,16 +87,18 @@ function BookNewsDetails() {
         {/* Back Button */}
         <button 
           onClick={() => navigate(-1)}
-          className="flex items-center text-gray-300 hover:text-white mb-8 transition-colors duration-300"
+          className="flex items-center text-gray-100 hover:text-white mb-8 transition-colors duration-300"
         >
           <FaArrowLeft className="mr-2" />
           <span>Back to Books</span>
         </button>
 
+
+          
         {/* Book Card */}
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
           {/* Book Header */}
-          <div className="bg-gradient-to-r from-blue-900 to-blue-700 p-8 text-white">
+          <div className="bg-gradient-to-r from-red-500 to-red-700 p-8 text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-2 font-serif tracking-wide">{book.title}</h1>
             <p className="text-amber-200 text-lg mb-1">by {book.author}</p>
             <p className="text-amber-300 text-sm">{book.postDate}</p>
