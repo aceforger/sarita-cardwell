@@ -150,7 +150,7 @@ function Home() {
           >
             <div className="absolute inset-0 bg-gradient-to-t from-[#FFA500] to-transparent z-0"></div>
             <div className="absolute bottom-0 left-0 p-6 z-20">
-              <h3 className="text-3xl md:text-2xl font-bold text-sky-600 mb-4 font-serif leading-tight">THE LEGEND OF ANNE AND NUBIAN</h3>
+              <h3 className="text-3xl md:text-2xl font-bold text-sky-600 mb-4 font-serif leading-tight">THE LEGEND OF ANNE THE NUBIAN</h3>
             </div>
             <img
               src="/images/image4.png"
