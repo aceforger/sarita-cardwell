@@ -237,7 +237,7 @@ function Home() {
 
         {/* Bottom bar */}
         <div className="border-t border-orange-800 mt-4 pt-3 text-center text-black text-xs">
-          <p>© {new Date().getFullYear()} Sarita Gaye Cardwell. All rights reserved. | 411 Socials LLC.</p>
+          <p>© {new Date().getFullYear()} Sarita Gaye Cardwell. All rights reserved.</p>
         </div>
         </footer>
           {showPopup && <Popup onClose={() => setShowPopup(false)} />}
